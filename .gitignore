@@ -1,0 +1,31 @@
+# Ignore Python cache and virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+.env
+.venv/ # Common virtual environment folder name
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore data files (especially raw and large processed ones)
+# This will ignore EVERYTHING inside data/raw and data/processed
+data/raw/
+data/processed/
+# If you had very small, essential CSVs in data/processed you *wanted* to track,
+# you could add an exception like:
+# !data/processed/my_small_essential_metadata.csv
+# But for now, ignoring all of data/raw and data/processed is safest.
+
+# Ignore any downloaded index.html files
+index.html
+data/index.html # If index.html was in the data folder
+
+# macOS specific
+.DS_Store
+
+# IDE-specific folders (example for VS Code)
+.vscode/
